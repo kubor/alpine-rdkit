@@ -9,7 +9,7 @@ Install [Anaconda3](https://www.continuum.io/downloads) and latest version of RD
 ## Login with bash
 
 ```
-docker run kubor/alpine-rdkit -it bash
+docker -it run kubor/alpine-rdkit bash
 ```
 
 ## Example
