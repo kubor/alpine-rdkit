@@ -3,7 +3,7 @@ FROM frolvlad/alpine-glibc
 MAINTAINER kubor
 
 RUN apk update && \
-    apk --no-cache add bash ca-certificates wget libxext libxrender && \
+    apk --no-cache add bash ca-certificates wget libxext libxrender libstdc++ && \
     update-ca-certificates && \
     apk --update add tzdata && \
     cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime && \
@@ -16,5 +16,4 @@ RUN echo 'export PATH=/opt/anaconda/bin:$PATH' > /etc/profile.d/anaconda.sh && \
 
 ENV PATH /opt/anaconda/bin:$PATH
 
-RUN conda install -y -c rdkit rdkit && \
-    conda install -y libgcc 
+RUN conda install -y -c rdkit rdkit 
