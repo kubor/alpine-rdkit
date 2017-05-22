@@ -4,7 +4,7 @@ alpine-rdkit
 RDKit on alpine linux with Anaconda
 
 
-Install [Anaconda3](https://www.continuum.io/downloads) and latest version of RDKit from https://anaconda.org/rdkit/rdkit .
+Install [Miniconda3](https://www.continuum.io/downloads) and latest version of RDKit from https://anaconda.org/rdkit/rdkit .
 
 ## Login with bash
 
