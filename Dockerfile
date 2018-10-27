@@ -1,5 +1,7 @@
 FROM frolvlad/alpine-glibc:alpine-3.8_glibc-2.28
 
+ENV RDKIT_VERSION 2018.09.1.0
+
 MAINTAINER kubor
 
 RUN apk update && \
@@ -16,4 +18,4 @@ RUN echo 'export PATH=/opt/anaconda/bin:$PATH' > /etc/profile.d/anaconda.sh && \
 
 ENV PATH /opt/anaconda/bin:$PATH
 
-RUN conda install -y -c rdkit rdkit 
+RUN conda install -y -c rdkit rdkit=$RDKIT_VERSION
