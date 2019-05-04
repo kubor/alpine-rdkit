@@ -1,6 +1,6 @@
 FROM frolvlad/alpine-glibc:alpine-3.8_glibc-2.28
 
-ENV RDKIT_VERSION 2018.09.1.0
+ENV RDKIT_VERSION 2019.03.1
 
 LABEL maintainer 'kubor'
 
