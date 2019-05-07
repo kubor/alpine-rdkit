@@ -1,7 +1,7 @@
 alpine-rdkit
 ===
 
-RDKit on alpine linux with Anaconda
+RDKit on alpine linux with Miniconda
 
 
 Install [Miniconda3](https://www.continuum.io/downloads) and latest version of RDKit from https://anaconda.org/rdkit/rdkit .

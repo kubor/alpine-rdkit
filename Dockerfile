@@ -1,8 +1,8 @@
 FROM frolvlad/alpine-glibc:alpine-3.8_glibc-2.28
 
-ENV RDKIT_VERSION 2018.09.1.0
+ENV RDKIT_VERSION 2019.03.1
 
-MAINTAINER kubor
+LABEL maintainer 'kubor'
 
 RUN apk update && \
     apk --no-cache add bash ca-certificates wget libxext libxrender libstdc++ && \
