@@ -1,6 +1,6 @@
 FROM frolvlad/alpine-glibc:alpine-3.8_glibc-2.28
 
-ENV RDKIT_VERSION 2019.03.1
+ENV RDKIT_VERSION 2021.03.3
 
 LABEL maintainer 'kubor'
 
@@ -18,4 +18,4 @@ RUN echo 'export PATH=/opt/anaconda/bin:$PATH' > /etc/profile.d/anaconda.sh && \
 
 ENV PATH /opt/anaconda/bin:$PATH
 
-RUN conda install -y -c rdkit rdkit=$RDKIT_VERSION
+RUN conda install -y -c conda-forge rdkit=$RDKIT_VERSION
